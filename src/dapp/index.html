@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+        </div>
+        <div class="row top-20">
+            <label class="form">Flight</label> <input type="text" id="flight-number">
+            <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+
+           
+        </div>
+
+
+        <div class="row top-20">
+            <div id="flight-status" class="top-20">
+            </div>
+            <span id='holdIndex' style="display: none"></span>
+           
+        </div>
+        <div class="row top-20">
+            <btn id="oracle-response"  class="btn btn-primary">Track Flight Status!</btn>
+        </div>
+        
+        <div class="row top-20">
+            <div id="insurance-status" class="top-20">
+            </div>
+           
+        </div>
+
+        <div class="row top-20">
+            
+            
+            <label for="insured_flights">Choose a Flight:</label>
+
+            <select name="insured_flights" id="insured_flights">
+            <option value="1">ND1309</option>
+            </select>
+
+            <label class="form">FlightDate</label> <input type="text" id="flightDate" value="1/1/2020">
+            <label class="form">Insurance Price</label> <input type="text" id="insurance" value="1">
+            <btn id="purchase-insurance"  class="btn btn-primary">Buy Flight Insurance</btn>
+        </div>
+        
+
+
+
+    </main>
+
+</body>
+
+</html>
